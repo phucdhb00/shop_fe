@@ -1,14 +1,15 @@
 spring:
   datasource:
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://localhost;database=angularspringbootecommerce;encrypt=false
-    username: sa
-    password: password
+    url: jdbc:mysql://localhost:3306/e_commerce_b
+    username: root
+    password: 101200Phuc
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     show-sql: true
     properties:
       hibernate.dialect: org.hibernate.dialect.SQLServerDialect
     hibernate:
       ddl-auto: update
+
 stripe:
-  secret-key: sk_test_51NiZKsLtTFoBOb8wTg4V2C3bJqrQ53qMHLusPXct6hp0O3yNtHXfEITKl7bLHNPRG7Egk28A5d1X7H4yoCvUl5kF00OP3VpgCr
+  secret-key: ""
